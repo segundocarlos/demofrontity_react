@@ -1,5 +1,11 @@
 # demofrontity-react
 
+# TUTORIAL:
+# PARTE 1: https://www.youtube.com/watch?v=hHWsignnoYQ&t=46s
+# PARTE 2: https://www.youtube.com/watch?v=wKDdLVA6yO4
+# PARTE 3: https://www.youtube.com/watch?v=Aik3QuyGd_g
+
+
 This project was bootstrapped with [Frontity](https://frontity.org/).
 
 #### Table of Contents

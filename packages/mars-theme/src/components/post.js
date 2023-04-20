@@ -36,6 +36,19 @@ const Post = ({ state, actions, libraries }) => {
   // Get the html2react component.
   const Html2React = libraries.html2react.Component;
 
+  const postType = data.type;
+  const libro = state.source["libro"][data.id];
+  
+  let isbn ="";
+
+  if (postType === "libro")
+  {
+    isbn = libro.acf.sbn;
+  }
+
+
+
+
   /**
    * Once the post has loaded in the DOM, prefetch both the
    * home posts and the list component so if the user visits
@@ -51,6 +64,15 @@ const Post = ({ state, actions, libraries }) => {
     <Container>
       <div>
         <Title dangerouslySetInnerHTML={{ __html: post.title.rendered }} />
+
+        {postType === "libro" &&  (
+          <div>
+            <p>Este es un libro con identificacor: { post.id } </p>
+            <p>ISBN: { isbn } </p>
+
+          </div>
+        )
+        }
 
         {/* Hide author and date on pages */}
         {!data.isPage && (

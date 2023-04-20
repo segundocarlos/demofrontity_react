@@ -1,3 +1,12 @@
+
+# TUTORIAL:
+# PARTE 1: https://www.youtube.com/watch?v=hHWsignnoYQ&t=46s
+# PARTE 2: https://www.youtube.com/watch?v=wKDdLVA6yO4
+# PARTE 3: https://www.youtube.com/watch?v=Aik3QuyGd_g
+
+
+
+
 # `@frontity/mars-theme`
 
 [![Version](https://img.shields.io/npm/v/@frontity/mars-theme.svg)](https://www.npmjs.com/package/@frontity/mars-theme) [![npm](https://img.shields.io/npm/dw/@frontity/mars-theme)](https://www.npmjs.com/package/@frontity/mars-theme) [![License: Apache--2.0](https://img.shields.io/badge/license-Apache%202-lightgrey)](https://github.com/frontity/frontity/blob/master/LICENSE)

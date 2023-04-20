@@ -3,8 +3,8 @@ const settings = {
   "state": {
     "frontity": {
       "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "title": "DonaLibros",
+      "description": "Una plataforma para donar libros"
     }
   },
   "packages": [
@@ -18,16 +18,16 @@ const settings = {
               "/"
             ],
             [
-              "Nature",
-              "/category/nature/"
+              "sample",
+              "/pagina-ejemplo/"
             ],
             [
-              "Travel",
-              "/category/travel/"
+              "Libros",
+              "/libros/"
             ],
             [
-              "Japan",
-              "/tag/japan/"
+              "Genero - Terror",
+              "/genero/terror/"
             ],
             [
               "About Us",
@@ -45,8 +45,27 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
-        }
+          "url": "https://ifindit4you.com/",
+          "postTypes": [
+            {
+              "type": "libro",
+              "endpoint": "libro",
+              "archive": "/libros"
+            }
+          ],
+          "taxonomies" : [
+            {
+              "taxonomy": "genero",
+              "endpoint": "genero",
+              "postTypeEndpoint": "libro",
+              "params": {
+                "per_page" : 5,
+                "_embed" :true
+              }
+            }
+          ]
+        },
+        
       }
     },
     "@frontity/tiny-router",
